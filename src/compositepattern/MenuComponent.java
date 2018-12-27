@@ -16,27 +16,28 @@ public abstract class MenuComponent {
         throw new UnsupportedOperationException();
     }
 
-    public void getChild(MenuComponent menuComponent) {
+    // 获取菜单组件
+    public MenuComponent getChild(int i) {
         throw new UnsupportedOperationException();
     }
 
-    public void getName(MenuComponent menuComponent) {
+    public String getName() {
         throw new UnsupportedOperationException();
     }
 
-    public void getDesc(MenuComponent menuComponent) {
+    public String getDesc() {
         throw new UnsupportedOperationException();
     }
 
-    public void getPrice(MenuComponent menuComponent) {
+    public double getPrice() {
         throw new UnsupportedOperationException();
     }
 
-    public void isVegetarian(MenuComponent menuComponent) {
+    public boolean isVegetarian() {
         throw new UnsupportedOperationException();
     }
 
-    public void print(MenuComponent menuComponent) {
+    public void print() {
         throw new UnsupportedOperationException();
     }
 

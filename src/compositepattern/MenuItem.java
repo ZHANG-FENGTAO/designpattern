@@ -1,6 +1,7 @@
 package compositepattern;
 
 /**
+ * 菜单项
  * @author zft
  * @date 2018/12/27.
  */
@@ -17,29 +18,30 @@ public class MenuItem extends MenuComponent {
         this.vegetarian = vegetarian;
         this.price = price;
     }
-
     @Override
-    public void getName(MenuComponent menuComponent) {
-        super.getName(menuComponent);
+    public String getName() {
+        return name;
+    }
+    @Override
+    public String getDesc() {
+        return desc;
+    }
+    @Override
+    public boolean isVegetarian() {
+        return vegetarian;
+    }
+    @Override
+    public double getPrice() {
+        return price;
     }
 
     @Override
-    public void getDesc(MenuComponent menuComponent) {
-        super.getDesc(menuComponent);
-    }
-
-    @Override
-    public void getPrice(MenuComponent menuComponent) {
-        super.getPrice(menuComponent);
-    }
-
-    @Override
-    public void isVegetarian(MenuComponent menuComponent) {
-        super.isVegetarian(menuComponent);
-    }
-
-    @Override
-    public void print(MenuComponent menuComponent) {
-        super.print(menuComponent);
+    public void print(){
+        System.out.println(" "+getName());
+        if (isVegetarian()){
+            System.out.println("(v)");
+        }
+        System.out.println(", "+getPrice());
+        System.out.println("  --"+getPrice());
     }
 }
